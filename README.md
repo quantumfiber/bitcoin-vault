@@ -69,7 +69,7 @@ One can release the funds the following way:
 	* fully signed transaction A/vault --> B/release
 	* fully signed transaction B/release --> final wallet/source and
 
-##### Loosing scenarios / No advantage scenarios
+##### Losing scenarios / No advantage scenarios
 * An attacker has access to:
 	* seed E
 	* seed R2
