@@ -101,4 +101,4 @@ One can release the funds the following way:
 	3. Construct transaction funding wallet --> vault
 	4. Construct all other partial transactions 
 	5. Delete keys/seeds  V1 and V2
-* The vault address **MUST NOT** be sent to again, because it is undependable after deleting V1
+* The vault address **MUST NOT** be sent to again, because it is unspendable after deleting V1
