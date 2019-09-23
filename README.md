@@ -64,10 +64,10 @@ One can release the funds the following way:
 ##### Winning scenarios
 * An attacker has access to:
 	* R2 and
-	* the partially signed transaction B/release --> final wallet/source and
+	* the partially signed transaction B/release --> final wallet/source
 * An attacker has access to:
 	* fully signed transaction A/vault --> B/release
-	* fully signed transaction B/release --> final wallet/source and
+	* fully signed transaction B/release --> final wallet/source 
 
 ##### Losing scenarios / No advantage scenarios
 * An attacker has access to:
