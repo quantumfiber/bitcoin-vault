@@ -4,8 +4,11 @@ An implementation of a bitcoin vault with currently available op_codes on bitcoi
 A bitcoin vault are 2 bitcoin addresses (A and B). You store bitcoins in address A long-tern. Address A can only spend to B. Such a transaction ( A --> B) could be initiated either by you or a thief.  The crucial point is that the thief has to wait a certain time, e.g. 2 weeks, before he can initiate a spend from B to his own address. However you noticed the transaction A --> B on the blockchain and initiate an immediate transaction B --> your address with your secret seed E, therefore stopping the theft. 
 
 **Current status:** The ideal version of address A (bitcoin vault), with a spend restriction, cannot be realized with current Bitcoin script.
+
 **Workaround (this script):** One can realize bitcoin vaults however with partial signed transactions and deleting of private keys (yes, really deleting).  The attached script realizes exactly this workaround on bitcoin testnet. 
+
 **Future outlook:** Though it is possible that these covenant op_codes  for real bitcoin vaults will be included in the future, it is not certain because: If such op_codes would be implemented one could have recursive restrictions on spending, effectively locking the bitcoins forever (except for fees). Prior to implementation one need to carefully evaluate (usage) risks of these op_codes. Until then this workaround method could be a viable path to limit bitcoin thefts in an effective manor.
+
 
 **Possible implementations:** There are at least 2 possible ways of enforcing the timelock in the transactions.
 
